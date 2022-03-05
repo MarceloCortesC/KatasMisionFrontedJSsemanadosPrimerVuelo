@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacerpedido</title>
+</head>
+<body bgcolor="silver">
+    <h1>Haz tu pedido por favor.</h1>
+
+    <form action="pedido.js">
+        <lable for="Nombre">Escriba su nombre, por favor</lable><br>
+        <input type="text" id="Nombre" name="Nombre" placeholder="Nombre">
+        <br>
+
+        <label for="correo">Ingrese su Correo electronico, por favor</label><br>
+        <input type="email" id="correo" name="correo"><br>
+        
+        <lable for="Telefono">Escriba su numero de telefono, por favor</lable><br>
+        <input type="number" id="Telefono" name="Telefono">
+        <br>
+
+        <p>Si gustas, puedes describir tu pedido letra por letra, puedes hacerlo en este espacio:</p>
+        <lable for="Descripcion">Escriba su descripcion, por favor</lable>
+        <input type="text" id="Descripcion" name="Descripcion">
+        <br>
+
+        <p>Para aqui o para llevar</p>
+        <input type="radio" id="aqui" name="aquiollevar" value="Aqui">
+        <label for="roja">Aqui</label><br>
+        <input type="radio" id="llevar" name="aquiollevar" value="Llevar">
+        <label for="verde">Llevar</label><br>
+
+        <br>
+        <p>Por favor haga sus selecciones:</p>
+        <input type="checkbox" id="vchico" name="vchico" value="Vchico">
+        <label for="vchico">Pastel de tres leches de vainilla, tamaño chico</label><br>
+        <input type="number" id="vchicoCuantos" name="vchicoCuantos" placeholder="cuantos?"><br>
+        <input type="checkbox" id="vmediana" name="vmediana" value="Vmediana">
+        <label for="vmediana">Pastel de tres leches de vainilla, tamaño mediano</label><br>
+        <input type="number" id="vmedianaCuantos" name="vmedianaCuantos" placeholder="cuantos?"><br>
+        <input type="checkbox" id="vgrande" name="vgrande" value="Vgrande">
+        <label for="vgrande">Pastel de tres leches de vainilla, tamaño grande</label><br>
+        <input type="number" id="vgrandeCuantos" name="vgrandeCuantos" placeholder="cuantos?"><br>
+        <input type="checkbox" id="cchico" name="cchico" value="Cchico">
+        <label for="cchico">Pastel de tres leches de chocolate, tamaño chico</label><br>
+        <input type="number" id="cchicoCuantos" name="cchicoCuantos" placeholder="cuantos?"><br>
+        <input type="checkbox" id="cmediana" name="cmediana" value="Cmediana">
+        <label for="cmediana">Pastel de tres leches de chocolate, tamaño mediano</label><br>
+        <input type="number" id="cmedianaCuantos" name="cmedianaCuantos" placeholder="cuantos?"><br>
+        <input type="checkbox" id="cgrande" name="cgrande" value="Cgrande">
+        <label for="cgrande">Pastel de tres leches de chocolate, tamaño grande</label><br>
+        <input type="number" id="cgrandeCuantos" name="cgrandeCuantos" placeholder="cuantos?"><br> 
+   <br><br><br>
+
+   <p>Si gustas combinar tu pastel con ootro puedes hacerlo aqui:</p>
+        <input type="checkbox" id="vchico1" name="vchico1" value="Vchico1">
+        <label for="vchico1">Pastel de tres leches de vainilla, tamaño chico</label><br>
+        <input type="number" id="vchico1Cuantos" name="vchico1Cuantos" placeholder="cuantos?"><br>
+        <input type="checkbox" id="vmediana1" name="vmediana1" value="Vmediana1">
+        <label for="vmediana1">Pastel de tres leches de vainilla, tamaño mediano</label><br>
+        <input type="number" id="vmediana1Cuantos" name="vmediana1Cuantos" placeholder="cuantos?"><br>
+        <input type="checkbox" id="vgrande1" name="vgrande1" value="Vgrande1">
+        <label for="vgrande1">Pastel de tres leches de vainilla, tamaño grande</label><br>
+        <input type="number" id="vgrande1Cuantos" name="vgrande1Cuantos" placeholder="cuantos?"><br>
+        <input type="checkbox" id="cchico1" name="cchico1" value="Cchico1">
+        <label for="cchico1">Pastel de tres leches de chocolate, tamaño chico</label><br>
+        <input type="number" id="cchico1Cuantos" name="cchico1Cuantos" placeholder="cuantos?"><br>
+        <input type="checkbox" id="cmediana1" name="cmediana1" value="Cmediana1">
+        <label for="cmediana1">Pastel de tres leches de chocolate, tamaño mediano</label><br>
+        <input type="number" id="cmediana1Cuantos" name="cmediana1Cuantos" placeholder="cuantos?"><br>
+        <input type="checkbox" id="cgrande1" name="cgrande1" value="Cgrande1">
+        <label for="cgrande1">Pastel de tres leches de chocolate, tamaño grande</label><br>
+        <input type="number" id="cgrande1Cuantos" name="cgrande1Cuantos" placeholder="cuantos?"><br> 
+   <br><br><br>
+
+
+        <p>Si deseas agregar un adorno; aqui puedes seleccionar a tu gusto...</p>
+        <input type="checkbox" id="plastico" name="plastico" value="Plastico">
+        <label for="plastico">Plastico para foto (no es comestible)</label><br> 
+        <br>
+        <input type="checkbox" id="velai" name="velai" value="Velai">
+        <label for="velai">Vela individual (no es comestible)</label><br>
+        <input type="number" id="velaiCuantos" name="velaiCuantos" placeholder="digite la cantidad de velas">
+        <br> <br>
+        <input type="checkbox" id="escriturac" name="escriturac" value="Escriturac">
+        <label for="escriturac">Escritua sabor chocolate</label><br> 
+        <lable for="Escriturac">Escriba la palabras o palabras que desea colocar</lable><br>
+        <input type="text" id="Escriturac" name="Escriturac" placeholder="digite sus palabras">
+        <br>
+<br>
+        <input type="checkbox" id="escrituraz" name="escrituraz" value="Escrituraz">
+        <label for="escrituraz">Escritua sabor cereza</label><br> 
+        <lable for="Escrituraz">Escriba la palabras o palabras que desea colocar</lable><br>
+        <input type="text" id="Escrituraz" name="Escrituraz" placeholder="digite sus palabras">
+        <br><br>
+        <lable for="Aextra">Si necesitas ser mas especifico con los adornos (combinar decierta manera las palabras con los sabores o velas, o alguna otra cosa, puedes describir ese caso en este espacio):</lable><br>
+        <input type="text" id="Aextra" name="Aextra" placeholder="Descripcion...">
+        <br><br>
+        <br><br>
+
+        <input type="reset">
+        <input type="submit"> 
+        <br>
+    </form>
+   
+</body>
+</html>
